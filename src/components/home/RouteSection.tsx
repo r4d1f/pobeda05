@@ -12,9 +12,14 @@ export function RouteSection() {
       />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <p className="text-xs uppercase tracking-[0.18em] text-white/45">
-          Маршрут и остановки
-        </p>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <p className="text-xs uppercase tracking-[0.18em] text-white/45">
+            Маршрут и остановки
+          </p>
+          <p className="text-xs uppercase tracking-[0.16em] text-white/40">
+            В пути {site.route.duration}
+          </p>
+        </div>
 
         <div className="mt-6 space-y-7">
           <DirectionBlock
@@ -45,16 +50,11 @@ function DirectionBlock({
 }) {
   return (
     <div>
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber">
-            {label}
-          </p>
-          <p className="mt-1 font-display text-2xl sm:text-3xl">{subtitle}</p>
-        </div>
-        <p className="text-xs uppercase tracking-[0.16em] text-white/40">
-          {site.route.duration}
+      <div>
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber">
+          {label}
         </p>
+        <p className="mt-1 font-display text-2xl sm:text-3xl">{subtitle}</p>
       </div>
       <JourneyLine cities={cities} />
     </div>

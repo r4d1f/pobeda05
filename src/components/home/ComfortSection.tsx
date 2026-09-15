@@ -25,7 +25,7 @@ export function ComfortSection() {
           Комфорт в дороге
         </p>
         <h2 className="mt-2 max-w-2xl font-display text-3xl leading-tight text-ink sm:text-4xl">
-          Сделали всё, чтобы 30 часов прошли спокойно
+          Комфорт на всём пути следования
         </h2>
         <p className="mt-3 max-w-2xl text-ink-soft">
           Комфортабельные автобусы туристического класса без пересадок по пути
