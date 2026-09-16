@@ -16,7 +16,7 @@ export function HomeHero() {
       <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-ink/35" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-12 pt-24 sm:px-6 sm:pb-14 lg:justify-center lg:pb-16">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-4 pb-12 pt-12 sm:px-6 sm:pb-14 lg:justify-center lg:pb-16">
         <p className="animate-fade-up font-display text-5xl tracking-tight sm:text-6xl lg:text-7xl">
           {site.name}
         </p>

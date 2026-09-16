@@ -6,7 +6,7 @@ type Props = {
 
 export function PageHero({ title, description, crumbs }: Props) {
   return (
-    <section className="relative overflow-hidden bg-ink pt-24 pb-10 text-white sm:pt-28 sm:pb-12">
+    <section className="relative overflow-hidden bg-ink pt-10 pb-10 text-white sm:pt-12 sm:pb-12">
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{

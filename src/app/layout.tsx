@@ -3,7 +3,6 @@ import { Manrope, Source_Serif_4 } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { MobileStickyCta } from "@/components/MobileStickyCta";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -91,9 +90,8 @@ export default function RootLayout({
       <body className="min-h-dvh bg-paper font-sans text-ink antialiased">
         <JsonLd />
         <Header />
-        <main className="flex-1 pb-24 md:pb-0">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
-        <MobileStickyCta />
       </body>
     </html>
   );

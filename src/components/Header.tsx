@@ -24,7 +24,7 @@ export function Header() {
   const isPassenger = pathname.startsWith("/pasazhiram");
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-ink/85 backdrop-blur-md">
+    <header className="relative z-40 border-b border-white/10 bg-ink/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
         <Link
           href="/"
