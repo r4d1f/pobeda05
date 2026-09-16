@@ -65,24 +65,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {site.legalName}
           </p>
-          <p className="flex flex-wrap gap-x-3 gap-y-1">
-            <a
-              href={site.biletdo.disclaimerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-amber"
-            >
-              Пользовательское соглашение
-            </a>
-            <a
-              href={site.biletdo.policyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-amber"
-            >
-              Политика конфиденциальности
-            </a>
-          </p>
+          <p>Регулярные междугородние перевозки</p>
         </div>
       </div>
     </footer>

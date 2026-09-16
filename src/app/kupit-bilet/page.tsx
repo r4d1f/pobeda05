@@ -106,13 +106,6 @@ export default function BuyTicketPage() {
           </div>
 
           <HelpBlock />
-
-          <p className="mt-6 text-sm text-ink/55">
-            Диспетчерская:{" "}
-            <a href={site.phoneHref} className="font-medium text-ink">
-              {site.phone}
-            </a>
-          </p>
         </div>
       </section>
     </>
