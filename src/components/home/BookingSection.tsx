@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 
 export function BookingSection() {
   return (
-    <section id="kupit" className="bg-paper py-12 sm:py-14">
+    <section id="kupit" className="bg-paper pt-14 pb-6 sm:pt-16 sm:pb-8">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>

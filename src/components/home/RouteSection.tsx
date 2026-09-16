@@ -2,37 +2,41 @@ import { site } from "@/lib/site";
 
 export function RouteSection() {
   return (
-    <section className="relative overflow-hidden bg-ink py-12 text-white sm:py-14">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        style={{
-          background:
-            "radial-gradient(ellipse 50% 40% at 15% 20%, rgba(232,163,23,0.18), transparent 50%), radial-gradient(ellipse 45% 50% at 85% 80%, rgba(232,163,23,0.12), transparent 55%)",
-        }}
-      />
-
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-wrap items-end justify-between gap-3">
-          <p className="text-xs uppercase tracking-[0.18em] text-white/45">
-            Маршрут и остановки
-          </p>
-          <p className="text-xs uppercase tracking-[0.16em] text-white/40">
-            В пути {site.route.duration}
-          </p>
-        </div>
-
-        <div className="mt-6 space-y-7">
-          <DirectionBlock
-            label="Туда"
-            subtitle={`${site.route.forward[0]} → ${site.route.forward[site.route.forward.length - 1]}`}
-            cities={site.route.forward}
+    <section className="bg-paper pt-6 pb-14 sm:pt-8 sm:pb-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="relative overflow-hidden rounded-[2rem] bg-ink px-5 py-10 text-white sm:px-10 sm:py-12">
+          <div
+            className="pointer-events-none absolute inset-0 opacity-70"
+            style={{
+              background:
+                "radial-gradient(ellipse 50% 40% at 15% 20%, rgba(232,163,23,0.18), transparent 50%), radial-gradient(ellipse 45% 50% at 85% 80%, rgba(232,163,23,0.12), transparent 55%)",
+            }}
           />
-          <div className="h-px bg-white/10" />
-          <DirectionBlock
-            label="Обратно"
-            subtitle={`${site.route.reverse[0]} → ${site.route.reverse[site.route.reverse.length - 1]}`}
-            cities={site.route.reverse}
-          />
+
+          <div className="relative">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <p className="text-xs uppercase tracking-[0.18em] text-white/45">
+                Маршрут и остановки
+              </p>
+              <p className="text-xs uppercase tracking-[0.16em] text-white/40">
+                В пути {site.route.duration}
+              </p>
+            </div>
+
+            <div className="mt-6 space-y-7">
+              <DirectionBlock
+                label="Туда"
+                subtitle={`${site.route.forward[0]} → ${site.route.forward[site.route.forward.length - 1]}`}
+                cities={site.route.forward}
+              />
+              <div className="h-px bg-white/10" />
+              <DirectionBlock
+                label="Обратно"
+                subtitle={`${site.route.reverse[0]} → ${site.route.reverse[site.route.reverse.length - 1]}`}
+                cities={site.route.reverse}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
